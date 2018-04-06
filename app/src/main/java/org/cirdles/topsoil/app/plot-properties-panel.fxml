@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<Accordion xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <panes>
+      <TitledPane animated="false" text="Axis Styling">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+         </content>
+      </TitledPane>
+      <TitledPane animated="false" text="Data Options">
+         <content>
+            <AnchorPane>
+               <children>
+                  <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <content>
+                        <AnchorPane>
+                           <children>
+                              <VBox fillWidth="false" layoutX="51.0" layoutY="28.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <CheckBox mnemonicParsing="false" text="Data Points" underline="true">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="15.0" />
+                                       </VBox.margin>
+                                    </CheckBox>
+                                    <GridPane VBox.vgrow="NEVER">
+                                       <columnConstraints>
+                                          <ColumnConstraints halignment="LEFT" hgrow="NEVER" minWidth="10.0" />
+                                          <ColumnConstraints halignment="LEFT" hgrow="NEVER" minWidth="10.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" valignment="CENTER" vgrow="NEVER" />
+                                          <RowConstraints minHeight="10.0" valignment="CENTER" vgrow="NEVER" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label text="Fill">
+                                             <GridPane.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <Label text="Shape" GridPane.rowIndex="1">
+                                             <GridPane.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <ColorPicker GridPane.columnIndex="1">
+                                             <GridPane.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </GridPane.margin>
+                                          </ColorPicker>
+                                          <ChoiceBox GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                             <GridPane.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </GridPane.margin>
+                                          </ChoiceBox>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="25.0" />
+                                       </VBox.margin>
+                                    </GridPane>
+                                    <RadioButton mnemonicParsing="false" text="Uncertainty Ellipses" underline="true">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="15.0" />
+                                       </VBox.margin>
+                                    </RadioButton>
+                                    <GridPane VBox.vgrow="NEVER">
+                                       <columnConstraints>
+                                          <ColumnConstraints fillWidth="false" hgrow="NEVER" minWidth="10.0" />
+                                          <ColumnConstraints hgrow="NEVER" minWidth="10.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="35.0" vgrow="NEVER" />
+                                          <RowConstraints minHeight="35.0" vgrow="NEVER" />
+                                          <RowConstraints minHeight="35.0" vgrow="NEVER" />
+                                       </rowConstraints>
+                                       <VBox.margin>
+                                          <Insets left="25.0" />
+                                       </VBox.margin>
+                                       <children>
+                                          <Label text="Ellipse Fill">
+                                             <GridPane.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <Label text="Border Fill" GridPane.rowIndex="1">
+                                             <GridPane.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <Label text="Border Thickness" GridPane.rowIndex="2">
+                                             <GridPane.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <ColorPicker GridPane.columnIndex="1">
+                                             <GridPane.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </GridPane.margin>
+                                          </ColorPicker>
+                                          <ColorPicker GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                             <GridPane.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </GridPane.margin>
+                                          </ColorPicker>
+                                          <Slider GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                             <GridPane.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </GridPane.margin>
+                                          </Slider>
+                                       </children>
+                                    </GridPane>
+                                    <RadioButton mnemonicParsing="false" text="Uncertainty Bars" underline="true">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="15.0" />
+                                       </VBox.margin>
+                                    </RadioButton>
+                                    <GridPane>
+                                       <columnConstraints>
+                                          <ColumnConstraints fillWidth="false" hgrow="NEVER" minWidth="10.0" />
+                                          <ColumnConstraints hgrow="NEVER" minWidth="10.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="35.0" vgrow="NEVER" />
+                                          <RowConstraints minHeight="35.0" vgrow="NEVER" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label text="Bar Color">
+                                             <GridPane.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <Label text="Bar Thickness" GridPane.rowIndex="1">
+                                             <GridPane.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <ColorPicker GridPane.columnIndex="1">
+                                             <GridPane.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </GridPane.margin>
+                                          </ColorPicker>
+                                          <Slider GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                             <GridPane.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </GridPane.margin>
+                                          </Slider>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="25.0" />
+                                       </VBox.margin>
+                                    </GridPane>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </TitledPane>
+      <TitledPane animated="false" text="Plot Features">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <VBox AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <RadioButton mnemonicParsing="false" text="None">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </VBox.margin>
+                                    </RadioButton>
+                                    <RadioButton mnemonicParsing="false" text="Wetherill Concordia Line">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </VBox.margin>
+                                    </RadioButton>
+                                    <GridPane>
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="NEVER" />
+                                          <ColumnConstraints hgrow="NEVER" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="35.0" vgrow="NEVER" />
+                                          <RowConstraints minHeight="35.0" vgrow="NEVER" />
+                                          <RowConstraints minHeight="35.0" vgrow="NEVER" />
+                                          <RowConstraints minHeight="35.0" vgrow="NEVER" />
+                                       </rowConstraints>
+                                       <VBox.margin>
+                                          <Insets left="25.0" />
+                                       </VBox.margin>
+                                       <children>
+                                          <Label text="Line Color">
+                                             <GridPane.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <Label text="Line Thickness" GridPane.rowIndex="1">
+                                             <GridPane.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <Label text="Envelope Color" GridPane.rowIndex="2">
+                                             <GridPane.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <Label text="Envelope Thickness" GridPane.rowIndex="3">
+                                             <GridPane.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <ColorPicker GridPane.columnIndex="1">
+                                             <GridPane.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </GridPane.margin>
+                                          </ColorPicker>
+                                          <ColorPicker GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                             <GridPane.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </GridPane.margin>
+                                          </ColorPicker>
+                                          <Slider GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                             <GridPane.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </GridPane.margin>
+                                          </Slider>
+                                          <Slider GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                             <GridPane.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </GridPane.margin>
+                                          </Slider>
+                                       </children>
+                                    </GridPane>
+                                    <RadioButton mnemonicParsing="false" text="Tera-Wasserburg Concordia Line">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </VBox.margin>
+                                    </RadioButton>
+                                    <GridPane>
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="NEVER" />
+                                          <ColumnConstraints hgrow="NEVER" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="35.0" vgrow="NEVER" />
+                                          <RowConstraints minHeight="35.0" vgrow="NEVER" />
+                                          <RowConstraints minHeight="35.0" vgrow="NEVER" />
+                                          <RowConstraints minHeight="35.0" vgrow="NEVER" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label text="Line Color">
+                                             <GridPane.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <Label text="Line Thickness" GridPane.rowIndex="1">
+                                             <GridPane.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <Label text="Envelope Color" GridPane.rowIndex="2">
+                                             <GridPane.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <Label text="Envelope Thickness" GridPane.rowIndex="3">
+                                             <GridPane.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <ColorPicker GridPane.columnIndex="1">
+                                             <GridPane.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </GridPane.margin>
+                                          </ColorPicker>
+                                          <ColorPicker GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                             <GridPane.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </GridPane.margin>
+                                          </ColorPicker>
+                                          <Slider GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                             <GridPane.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </GridPane.margin>
+                                          </Slider>
+                                          <Slider GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                             <GridPane.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </GridPane.margin>
+                                          </Slider>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="25.0" />
+                                       </VBox.margin>
+                                    </GridPane>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </TitledPane>
+   </panes>
+</Accordion>
